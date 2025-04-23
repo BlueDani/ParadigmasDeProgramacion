@@ -26,6 +26,17 @@ public class Luchador {
 	        // deberia ser responsabilidad de Luchador validar la altura y el peso y !null???
 
 	        return this.peso >= otro.peso && this.altura >= otro.altura;
+	        /*
+	        if(this.peso > otro.peso && this.altura > otro.altura) {
+	        	return true;
+	        }
+	        else if(this.peso == otro.peso && this.altura > otro.altura) {
+	        	return true;
+	        }
+	        else if(this.peso > otro.peso && this.altura == otro.altura) {
+	        	return true;
+	        }		
+	        */
 	}
 
 	@Override
@@ -51,14 +62,3 @@ public class Luchador {
 
 }
 
-/*
-if(this.peso > otro.peso && this.altura > otro.altura) {
-	return true;
-}
-else if(this.peso == otro.peso && this.altura > otro.altura) {
-	return true;
-}
-else if(this.peso > otro.peso && this.altura == otro.altura) {
-	return true;
-}		
-*/
